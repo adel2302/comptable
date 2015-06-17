@@ -9,7 +9,8 @@
 <body>
 <div ng-app="app">
     <div ng-controller="appCtrl">
-        <input ng-model="tva"  ng-change="validation()" placeholder="TVA" />
+        <div ng-include="'tva.html'">
+        </div>
         <input ng-model="champMontant"  ng-change="validation()" placeholder="MONTANT" />
     
     <select ng-model="taxe" ng-change="validation()">
